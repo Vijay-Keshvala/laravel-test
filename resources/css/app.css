@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.bunny.net/css?family=Nunito');
+ 
+/* Variables */
+@import 'variables';
+/* Bootstrap */
+@import 'bootstrap/scss/bootstrap';
+/* DataTables */
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+@import "datatables.net-bs5/css/dataTables.bootstrap5.min.css";
+@import "datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css";
+@import 'datatables.net-select-bs5/css/select.bootstrap5.css';
+
+
+.actionsDropdownBtn {
+    @apply text-white bg-blue-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-md text-sm px-2 py-1 text-center inline-flex items-center;
+}
+.actionsDropdownContent {
+    @apply z-10 hidden bg-white border border-gray-300 rounded-lg shadow-lg shadow-gray-400 min-w-52 absolute m-0;
+}
+
+.mheader-menu-btn-active {
+    @apply bg-indigo-500 text-white outline-none;
+}
+
+.propety-tab-links .tab-active {
+    @apply text-blue-600 border-blue-600;
+}
+
+div#propertyDetails ul {
+    @apply list-disc pl-8 mt-4;
+}
+div#propertyDetails ol {
+    @apply list-decimal pl-8 mt-4;
+}
+div#propertyDetails h1 {
+    @apply font-extrabold text-2xl mt-2;
+}
+div#propertyDetails h2 {
+    @apply font-bold text-xl mt-2;
+}
+div#propertyDetails h3 {
+    @apply font-semibold text-lg mt-2;
+}
+div#propertyDetails a {
+    @apply text-blue-500;
+}
